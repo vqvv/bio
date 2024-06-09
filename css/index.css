@@ -14,7 +14,6 @@ body, html {
     transform: translate(-50%, -50%);
     z-index: 1;
     color: white;
-    /* background-color: #ffffff42; */
     backdrop-filter: blur(25px);
     padding: 2.5rem;
     width: 300px;
@@ -81,8 +80,11 @@ body, html {
 
 #enter-button {
     padding: 20px 40px;
-    font-size: 20px;
+    font-size: 40px;
     cursor: pointer;
+    color: white;
+    background-color: transparent;
+    border: 2px solid transparent;
 }
 
 #content {
