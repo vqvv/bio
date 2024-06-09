@@ -1,0 +1,113 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+#bio-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    /* background-color: #ffffff42; */
+    backdrop-filter: blur(25px);
+    padding: 2.5rem;
+    width: 300px;
+    border-radius: 6px;
+}
+
+#user-profile {
+    text-align: center;
+}
+
+#user-profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#badges {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.badge {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    background-color: grey;
+    border-radius: 99999999px;
+    padding: 0px 23px 0px 13px;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    text-align: center;
+}
+
+#buttons a {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ffffff1c;
+    backdrop-filter: blur(100px);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+#buttons a:hover {
+    background-color: #868686;
+    transition: .3s;
+}
+
+#enter-site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+#enter-button {
+    padding: 20px 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#content {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 30%);
+    backdrop-filter: blur(1px);
+    z-index: 0;
+}
