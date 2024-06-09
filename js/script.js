@@ -3,11 +3,20 @@ $(document).ready(function() {
     var video = $('#background-video')[0];
     var isPlaying = false;
 
-    // Start playing the video and audio when they are loaded
+    // Preload video metadata to reduce initial loading time
+    video.preload = 'metadata';
+
+    // Start playing the video and audio when the video is loaded
     video.oncanplay = function() {
         video.play();
         audio.play();
         isPlaying = true;
+    };
+
+    // Handle video loading errors
+    video.onerror = function() {
+        console.error('Error loading video');
+        // You can display a message to the user or retry loading the video
     };
 
     // Handle button click
